@@ -1,0 +1,83 @@
+Project Open Data Dataset{
+description:	
+The metadata format for all federal open data. Validates a single JSON object entry (as opposed to entire Data.json catalog).
+
+@type	string
+title: Metadata Context
+default: dcat:Dataset
+IRI for the JSON-LD data type. This should be dcat:Dataset for each Dataset.
+
+title*	string
+title: Title
+minLength: 1
+Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery.
+
+identifier*	string
+title: Unique Identifier
+minLength: 1
+A unique identifier for the dataset or API as maintained within an Agency catalog or database.
+
+description*	string
+title: Description
+minLength: 1
+Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest.
+
+accessLevel*	string
+title: Public Access Level
+default: public
+The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).
+
+Enum:
+Array [ 3 ]
+accrualPeriodicity	string
+title: Frequency
+Frequency with which dataset is published.
+
+Enum:
+Array [ 20 ]
+describedBy	string($uri)
+title: Data Dictionary
+URL to the data dictionary for the dataset or API. Note that documentation other than a data dictionary can be referenced using Related Documents as shown in the expanded fields.
+
+describedByType	string
+title: Data Dictionary Type
+The machine-readable file format (IANA Media Type or MIME Type) of the distribution’s describedBy URL.
+
+issued	string
+title: Release Date
+Date of formal issuance.
+
+modified*	string
+title: Last Update
+Most recent date on which the dataset was changed, updated or modified.
+
+license	string($uri)
+title: License
+The license dataset or API is published with. See Open Licenses for more information.
+
+spatial	string
+title: Spatial
+minLength: 1
+The spatial coverage of the dataset. Could include a spatial region like a bounding box or a named place.
+
+marker	string
+title: Marker
+minLength: 1
+Latitude and longitude to mark.
+
+temporal	string
+title: Temporal
+The start and end dates for which the dataset is applicable, separated by a "/" (i.e., 2000-01-15T00:45:00Z/2010-01-15T00:06:00Z).
+
+isPartOf	string
+title: Collection
+minLength: 1
+The collection of which the dataset is a subset.
+
+publisher	Organization{...}
+contactPoint	Project Open Data ContactPoint vCard{...}
+theme	Category[...]
+keyword*	Tags[...]
+distribution	Distribution[...]
+references	Related Documents[...]
+}
