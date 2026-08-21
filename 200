@@ -1,0 +1,50 @@
+{
+  "@type": "string","Biblioteca Digital"
+  "title": "string","Sala de Lectura"
+  "identifier": "string",
+  "description": "string","Biblioteca digital para sala de lectura"
+  "accessLevel": "public",
+  "accrualPeriodicity": "R/P10Y",
+  "describedBy": "string",
+  "describedByType": "string",
+  "issued": "string",
+  "modified": "string",
+  "license": "string",
+  "spatial": "string",
+  "marker": "string",
+  "temporal": "string",
+  "isPartOf": "string",
+  "publisher": {Facilitador de lectura
+    "@type": "string", vecd890416@cultura.gob.mx
+    "name": "string",Diego Ventura
+    "subOrganizationOf": "string""Círculos de estudio INEA"
+  },
+  "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "string",
+    "hasEmail": "string"
+  },
+  "theme": [Salas de Lectura]
+    "string"
+  ],
+  "keyword": [bbjatlixco]
+    "string"
+  ],
+  "distribution": [1-50]
+    {
+      "@type": "image",
+      "title": "Nombrando y contando al Mundo","String"
+      "description": "string",
+      "format": "string","PDF"
+      "mediaType": "string",tex,"image"
+      "downloadURL": "string",
+      "accessURL": "string",
+      "conformsTo": "string",
+      "describedBy": "string",
+      "describedByType": "string"
+    }
+  ],
+  "references": [
+    "string"
+  ]
+}
